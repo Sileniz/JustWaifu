@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    padding: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+ul>a {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+ul>a:hover {
+    color: crimson;
+}
+
+@media (max-width: 300px) {
+    header {
+        padding: 10px;
+    }
+
+    ul {
+        gap: 1rem;
+    }
+
+    ul>a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 200px) {
+    header {
+        padding: 5px;
+    }
+
+    ul {
+        gap: 0.5rem;
+    }
+
+    ul>a {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 117px) {
+    header {
+        padding: 3px;
+    }
+
+    ul {
+        gap: 0.3rem;
+    }
+
+    ul>a {
+        font-size: 0.3rem;
+    }
+}
+
+/*MEDIA QUERY HEADER ACIMA*/
+
+/*HEADER CONFIGURAÇÕES ACIMA*/
+
+/*FOOTER CONFIGURAÇÕES ABAIXO*/
+
+footer {
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav.footer>h1 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    gap: 0.4rem;
+}
+
+nav.footer h1>a {
+    color: crimson;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*MEDIA QUERY FOOTER ABAIXO*/
+
+@media (max-width: 360px) {
+
+    nav.footer h1 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 300px) {
+    footer {
+        padding: 10px;
+    }
+
+    nav.footer h1 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 245px) {
+    footer {
+        padding: 9px;
+    }
+
+    nav.footer {
+        gap: 0.6rem;
+    }
+
+    nav.footer h1 {
+        gap: 0.3rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 211px) {
+    footer {
+        padding: 5px;
+    }
+
+    nav.footer {
+        gap: 0.3rem;
+    }
+
+    nav.footer h1 {
+        font-size: 0.4rem;
+    }
+}
+
+/*MEDIA QUERY FOOTER ACIMA*/
+
+/*MAIN (INFO) CONFIGURAÇÕES ABAIXO*/
+
+main {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(37, 37, 37, 1) 49%, rgba(0, 0, 0, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+main section button {
+    transition-duration: 0.5s;
+    border: none;
+    outline: none;
+    padding: 10px 35px;
+    color: white;
+    background-color: rgba(37, 37, 37, 1);
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px crimson;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main section button:hover {
+    transform: scale(1.1);
+}
+
+section div.info {
+    background-color: rgb(24, 24, 24);
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0px 5px 0px crimson;
+}
+
+
+section div.info>hr {
+    opacity: 100;
+    display: block;
+    width: calc(100% - 70px)
+}
+
+section div.info>h1.label_artist {
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+section div.info>h1.artist_name {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: white;
+}
+
+/*MEDIA QUERY MAIN ABAIXO*/
+
+@media (max-width: 339px) {
+    section div.info {
+        padding: 10px 0px;
+        gap: 0.4rem;
+    }
+
+    section div.info>h1.label_artist {
+        font-size: 0.8rem;
+    }
+
+    main section button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 0px crimson;
+        font-size: 0.8rem;
+    }
+
+    section div.info>hr {
+        width: calc(100% - 50px)
+    }
+
+    section div.info>h1.artist_name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 235px) {
+    section div.info {
+        padding: 10px 0px;
+        gap: 0.2rem;
+    }
+
+    section div.info>h1.label_artist {
+        font-size: 0.6rem;
+    }
+
+    main section button {
+        padding: 6px 15px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 0px crimson;
+        font-size: 0.6rem;
+    }
+
+    section div.info>hr {
+        width: calc(100% - 50px)
+    }
+
+    section div.info>h1.artist_name {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 200px) {
+    section div.info {
+        padding: 10px 0px;
+        gap: 0.3rem;
+        border-radius: 5px;
+    }
+
+    section div.info>h1.label_artist {
+        font-size: 0.4rem;
+    }
+
+    section div.info>hr {
+        width: calc(100% - 40px)
+    }
+
+    section div.info>h1.artist_name {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-height: 1090px) {
+    section div.info {
+        padding: 10px 0px;
+        gap: 0.3rem;
+        border-radius: 15px;
+    }
+
+    section div.info>h1.label_artist {
+        font-size: 1.4rem;
+    }
+
+    section div.info>hr {
+        width: calc(100% - 80px)
+    }
+
+    section div.info>h1.artist_name {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 486px) and (min-height: 1090px) {
+    section div.info {
+        padding: 10px 0px;
+        gap: 0.3rem;
+        border-radius: 15px;
+    }
+
+    section div.info>h1.label_artist {
+        font-size: 1rem;
+    }
+
+    section div.info>hr {
+        width: calc(100% - 80px)
+    }
+
+    section div.info>h1.artist_name {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 395px) and (min-height: 1090px) {
+    section div.info {
+        padding: 10px 0px;
+        gap: 0.3rem;
+        border-radius: 15px;
+    }
+
+    section div.info>h1.label_artist {
+        font-size: 1rem;
+    }
+
+    section div.info>hr {
+        width: calc(100% - 80px)
+    }
+
+    section div.info>h1.artist_name {
+        font-size: 1.3rem;
+    }
+}
+
+/*MAIN (INFO) MEDIA QUERY ACIMA*/
+/*MAIN (IMAGE) CONFIGURAÇÕES ABAIXO*/
+
+main section div.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+section div.image_container>img.image_src {
+    width: 300px;
+    border-radius: 3%;
+}
+
+@media (max-width: 339px) {
+    section {
+        gap: 1rem;
+        padding: 0px;
+    }
+
+    section div.image_container>img.image_src {
+        width: 200px;
+    }
+}
+
+@media (max-width: 235px) {
+    section {
+        gap: 0.7rem;
+        padding: 0px;
+    }
+
+    section div.image_container>img.image_src {
+        width: 170px;
+    }
+}
+
+@media (max-width: 200px) {
+    section {
+        gap: 0.7rem;
+        padding: 0px;
+    }
+
+    section div.image_container>img.image_src {
+        width: 140px;
+    }
+}
+
+@media (min-height: 1090px) {
+    section {
+        padding: 0px;
+        gap: 0.7rem;
+    }
+
+    section div.image_container>img.image_src {
+        width: 450px;
+    }
+}
+
+@media (max-width: 486px) and (min-height: 1090px) {
+    section {
+        gap: 0.7rem;
+    }
+
+    section div.image_container>img.image_src {
+        width: 350px;
+    }
+}
+
+@media (max-width: 395px) and (min-height: 1090px) {
+    section {
+        gap: 0.7rem;
+    }
+
+    section div.image_container>img.image_src {
+        width: 270px;
+    }
+}
+
+@media (max-width: 395px) and (min-height: 727px) {
+    section {
+        gap: 0.7rem;
+    }
+
+    section div.image_container>img.image_src {
+        width: 300px;
+    }
+}
+
+@media (max-width: 339px) and (min-height: 727px) {
+    section {
+        gap: 0.9rem;
+    }
+
+    section div.image_container>img.image_src {
+        width: 250px;
+    }
+}
+
+@media (max-width: 284px) and (min-height: 727px) {
+    section {
+        gap: 0.9rem;
+    }
+
+    section div.image_container>im.image_srcg {
+        width: 200px;
+    }
+}
+
+/*MAIN (IMAGE) MEDIA QUERY ACIMA*/
