@@ -1,8 +1,14 @@
 const getImageContainer = document.getElementById("images");
+import data from "./endpoints.js";
 
 // Faz a requisição da imagem diretamente para api//
 function getImage() {
-  fetch("https://nekos.best/api/v2/neko")
+  // Randomiza os parametros //
+  const param = Object.keys(data);
+  const baseURL = "https://nekos.best/api/v2/";
+  const endpoint = param[Math.floor(Math.random() * param.length)];
+  // Faz a requisição da api/
+  fetch(`${baseURL}${endpoint}`)
     .then((response) => response.json())
     .then((json) => insertImage(json));
 }
