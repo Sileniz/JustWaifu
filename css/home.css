@@ -228,10 +228,20 @@ section div.info>h1.label_artist {
     font-size: 1rem;
 }
 
-section div.info>h1.artist_name {
+main section div.info>h1.artist_name {
     font-weight: 500;
     font-size: 1.4rem;
     color: white;
+}
+
+h1.artist_name>a {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+h1.artist_name>a:hover {
+    color: crimson;
 }
 
 /*MEDIA QUERY MAIN ABAIXO*/
