@@ -304,6 +304,10 @@ div.images div.img_container>a.artist_a:hover {
         width: 500px
     }
 
+    main section#section_openImage_noscale {
+        width: 500px;
+    }
+
     div.images div.img_container>a.artist_a {
 
         padding: 10px 10px 10px 10px;
@@ -324,6 +328,10 @@ div.images div.img_container>a.artist_a:hover {
 
     main section#section_openImage {
         width: 400px
+    }
+
+    main section#section_openImage_noscale {
+        width: 400px;
     }
 
     main section#section_openImage div>span {
@@ -350,6 +358,10 @@ div.images div.img_container>a.artist_a:hover {
 
     main section#section_openImage {
         width: 400px
+    }
+
+    main section#section_openImage_noscale {
+        width: 400px;
     }
 
     main section#section_openImage div>span {
@@ -396,6 +408,10 @@ div.images div.img_container>a.artist_a:hover {
         width: 350px
     }
 
+    main section#section_openImage_noscale {
+        width: 350px;
+    }
+
     main section#section_openImage div>span {
         font-size: 1rem;
     }
@@ -422,6 +438,10 @@ div.images div.img_container>a.artist_a:hover {
         width: 350px
     }
 
+    main section#section_openImage_noscale {
+        width: 350px;
+    }
+
     main section#section_openImage div>span {
         font-size: 1rem;
     }
@@ -446,6 +466,10 @@ div.images div.img_container>a.artist_a:hover {
 
     main section#section_openImage {
         width: 290px
+    }
+
+    main section#section_openImage_noscale {
+        width: 290px;
     }
 
     main section#section_openImage div>span {
