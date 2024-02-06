@@ -209,6 +209,66 @@ main section div.images>div.img_container {
     outline: none;
 }
 
+main section.section_gallery {
+    opacity: 9%;
+    transition-duration: 0.5s;
+}
+
+main section.section_gallery_opacity {
+    opacity: 100%;
+    transition-duration: 0.5s;
+}
+
+main section#section_openImage_noscale {
+    z-index: 999;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+    width: 600px;
+    transition-duration: 0.7s;
+}
+
+main section#section_openImage {
+    z-index: 999;
+    position: absolute;
+    scale: 1;
+    opacity: 100%;
+    width: 600px;
+    transition-duration: 0.7s;
+}
+
+main section div.openImage {
+    padding: 0px 20px 20px 20px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    transition-duration: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div.openImage>span {
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+main section div.openImage>span:hover {
+    cursor: pointer;
+    color: crimson;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+main section div.openImage>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 div.images div.img_container>a.artist_a {
     transition-duration: 0.5s;
     bottom: 0%;
@@ -240,6 +300,10 @@ div.images div.img_container>a.artist_a:hover {
         border-radius: 5px;
     }
 
+    main section#section_openImage {
+        width: 500px
+    }
+
     div.images div.img_container>a.artist_a {
 
         padding: 10px 10px 10px 10px;
@@ -258,6 +322,14 @@ div.images div.img_container>a.artist_a:hover {
         border-radius: 5px;
     }
 
+    main section#section_openImage {
+        width: 400px
+    }
+
+    main section#section_openImage div>span {
+        font-size: 1.3rem;
+    }
+
     div.images div.img_container>a.artist_a {
 
         padding: 10px 10px 10px 10px;
@@ -274,6 +346,14 @@ div.images div.img_container>a.artist_a:hover {
         width: 140px;
         height: 180px;
         border-radius: 5px;
+    }
+
+    main section#section_openImage {
+        width: 400px
+    }
+
+    main section#section_openImage div>span {
+        font-size: 1.1rem;
     }
 
     div.images div.img_container>a.artist_a {
@@ -312,6 +392,14 @@ div.images div.img_container>a.artist_a:hover {
         border-radius: 5px;
     }
 
+    main section#section_openImage {
+        width: 350px
+    }
+
+    main section#section_openImage div>span {
+        font-size: 1rem;
+    }
+
     div.images div.img_container>a.artist_a {
 
         padding: 10px 10px 10px 10px;
@@ -328,6 +416,40 @@ div.images div.img_container>a.artist_a:hover {
         width: 100px;
         height: 140px;
         border-radius: 5px;
+    }
+
+    main section#section_openImage {
+        width: 350px
+    }
+
+    main section#section_openImage div>span {
+        font-size: 1rem;
+    }
+
+    div.images div.img_container>a.artist_a {
+
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+@media(max-width: 350px) {
+    main section div.images {
+        width: 400px;
+        gap: 0.5rem;
+    }
+
+    main section div.images>div.img_container {
+        width: 100px;
+        height: 140px;
+        border-radius: 5px;
+    }
+
+    main section#section_openImage {
+        width: 290px
+    }
+
+    main section#section_openImage div>span {
+        font-size: 1rem;
     }
 
     div.images div.img_container>a.artist_a {
